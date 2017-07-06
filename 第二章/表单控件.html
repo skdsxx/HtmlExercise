@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon"  href="tubiao.png">
+    </head>
+    <body>
+        <!--  form表单域 ,action处理用户信息-->
+    	<form action="1.aspx" method="post">
+    	   <fieldset>
+    	   	     <legend>用户注册</legend>
+    	   	      <!-- 文本输入框 ,maxlength设置最大长度-->
+    		用户名：<input type="text" name="username" maxlength="5"
+    		               readonly="readonly" disabled="disabled"
+    		               value="12321">
+    		<br>
+    		<br>
+    		               <!-- 密码输入框 -->
+    		密码：<input type="password" name="pwd">
+            <br>
+            <br>
+            性别：<input type="radio" name="xb" checked="checked">男
+            <input type="radio" name="xb">女
+            <br>
+            <br>
+            出生地：
+            省
+            <select name="sheng" multiple="multiple">
+            	<option>北京</option>
+            	<option selected="selected">山东</option>
+            	<option>江苏</option>
+            	<option>浙江</option>
+            	<option>广西</option>
+            </select>
+            市
+            <select name="shi">
+                <optgroup label="北京">
+                	<option>西城</option>
+            	    <option>东城</option>
+            	    <option>济宁</option>
+            	    <option>烟台</option>
+                </optgroup>
+                <optgroup label="山东省">
+                	<option>济南</option>
+            	    <option>青岛</option>
+            	    <option>济宁</option>
+            	    <option>烟台</option>
+                </optgroup>
+                <optgroup label="江苏省">
+                	<option>南京</option>
+            	    <option>苏州</option>
+            	    <option>江北</option>
+                </optgroup>
+            </select>
+             <br>
+            <br>
+            兴趣爱好：
+            <input type="checkbox" checked="checked">美食
+            <input type="checkbox">旅游
+            <input type="checkbox">跑步
+            <input type="checkbox">看书
+             <br>
+            <br>
+            自我介绍：
+            <textarea width="300" height="100">
+            	
+            </textarea>
+            <br>
+            <br>
+            上传头像：
+            <input type="file">
+            <br>
+            <br>
+            <!-- 表单提交按钮 -->
+    		<input type="submit" value="确定">
+
+             <!-- 普通按钮 -->
+    		<input type="button" value="普通按钮">
+              <!-- 重置按钮 -->
+    		<input type="reset">
+
+             <!-- 图片按钮 -->
+    		<input type="image" src="tubiao.png">
+    	   </fieldset>
+    	</form>
+    </body>
+</html>
