@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*  .one{
+             	color: red;
+             }
+             .two{
+             	color: green;
+             }
+
+             p.one{
+             	one:yellow;
+             } */
+             /* 標籤指定式選擇器 */
+
+             /* div#div1{
+             	color: red;
+             } */
+
+             /* 后代选择器 */
+             /* p{
+             	color: green;
+             } */
+            /*  div p{
+             	color: red;
+             } */
+
+             /* .one p{
+             	color: red;
+             } */
+
+
+
+            /*  p.one span{
+             	color: red;
+             	font-size: 30px;
+             }*/
+
+
+
+
+          /*  逗号，并集选择器 */
+            div.div1 ul.box li,div.div1 p{
+            	color:red;
+            }
+
+            div.box p.p1,div.box div.div1 p,p{
+            	color:green;
+            }
+       </style>
+    </head>
+    <body>
+        <!-- <p class="one">文字</p>
+        <p class="two">文字2</p>
+        <p class="one">文字3</p>
+        <p>文字4</p>
+        <span class="one">文字</span> -->
+
+        <!-- <div id="div1">文字</div>
+        <div>衣服纔到家</div> -->
+
+
+        <!-- <div class="one">
+        	<p>幸福的小女子</p>
+        </div>
+        <p>孤独的老人</p> -->
+
+
+        <!-- <p class="one">
+        	<span>文字</span>
+        </p>
+        <p class="two"> 
+        	<span>文字</span>
+        </p> -->
+
+
+
+        <div class="div1">
+        	<ul class="box">
+        		<li>苹果</li>
+        		<li>葡萄</li>
+        		<li>梨</li>
+        	</ul>
+        	
+        </div>
+        <div class="div1">
+             <p>文字</p>
+        </div>
+
+
+
+        <div class="box">
+        	<p class="p1"> 一段</p>
+        	
+        </div>
+        <div class="box">
+        	<div class="div1">
+        		<p>胡椒粉都</p>
+        	</div>
+        </div>
+        <p>文字</p>
+    </body>
+</html>
