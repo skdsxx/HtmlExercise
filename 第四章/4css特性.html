@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+             .one{
+             	color: red;
+             }
+             .two{
+             	color: green;
+             }
+        </style>
+    </head>
+    <body>
+
+        <!-- 层叠性，与样式的调用没关系，与样式的定义顺序有关 -->
+    	<p class="two one">一段文字</p>
+    	<!-- 继承性 -->
+    	<!-- 优先级 ！important>行内样式>id选择器>类选择器>标签选择器>默认 -->
+    	<!-- 继承权重为0 -->
+    	<!-- 如果样式选择器都指向同一个标签，则看其权重相加后的结果 -->
+    </body>
+</html>
