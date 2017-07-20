@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+             .box{
+             	width: 400px;
+             	background-color: pink;
+
+             	/* overflow: hidden; *//* 清除浮动 方式二*/
+             }
+             .left{
+             	width: 200px;
+             	height: 150px;
+             	background-color: #A93939;
+             	float: left;
+             }
+             .right{
+             	width: 200px;
+             	height: 100px;
+             	background-color: #18D8CA;
+             	float: left;
+             }
+            /*  清除浮动  方式一
+             .clearfixed{
+             	clear:both;
+             } */
+
+             
+             .footer{
+             	width: 400px;
+             	height: 100px;
+             	background-color: #989024;
+             }
+
+             .clearfix:after{
+             	content: "";
+             	display: block;
+             	clear: both;
+             	width: 0;
+             	height: 0;
+             	visibility: hidden;
+             }
+             .clearfix{
+             	zoom:1;/* 为了兼容IE浏览器 */
+             }
+        </style>
+    </head>
+    <body>
+         <div class="box clearfix">
+         	<div class="left"></div>
+         	<div class="right"></div>
+         	<!-- <div class="clearfixed"></div> -->
+         </div>
+         <div class="footer"></div>
+    </body>
+</html>
