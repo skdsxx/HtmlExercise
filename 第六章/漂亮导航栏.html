@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+              *{
+              	margin: 0;
+              	padding: 0;
+              }
+              .box{
+              	height: 55px;
+              	background:url("head_bg.jpg");
+              	margin-top: 20px;
+              	border-top: 1px solid gray;
+              	border-bottom: 1px solid gray;
+              	text-align: center;
+              	/* line-height: 55px;既可以在此设置也可以在li中设置 */
+
+              	padding-left: 400px;
+              }
+              li{
+              	list-style: none;
+              	line-height: 55px;
+              	background: url("li_bg.png") no-repeat right;
+              	float: left;
+              }
+              li a{
+              	padding: 0 20px;
+              	color: black;
+              	text-decoration: none;
+              	display: inline-block;
+              }
+
+              li a:hover{
+              	color: green;
+              }
+        </style>
+    </head>
+    <body>
+         <div class="box">
+             <ul>
+             	<li><a href="#">智能手机</a></li>
+             	<li><a href="#">平板电脑</a></li>
+             	<li><a href="#">iPad</a></li>
+             	<li><a href="#">笔记本</a></li>
+             </ul>
+         </div>
+    </body>
+</html>
