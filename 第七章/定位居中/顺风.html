@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+             *{
+             	margin: 0;
+             	padding: 0;
+             }
+             .box{
+             	width: 1259px;
+             	height: 472px;
+             	background: url("sf.png") no-repeat;
+
+             	margin:30px auto;
+             	position: relative;
+             }
+             .nav{
+             	width: 960px;
+             	height: 60px;
+             	background-color: #313131;
+             	position: absolute;
+             	left: 50%;
+             	margin-left: -480px;
+             	bottom: 0;
+             }
+
+             li{
+             	list-style: none;
+             	float: left;
+             	width: 160px;
+             	height: 60px;
+             	line-height: 60px;
+             	text-align: center;
+             }
+
+             a{
+             	color: white;
+             	font-size: 20px;
+             	text-decoration: none;
+             	width: 160px;
+             	height: 60px;
+            /*  	line-height: 60px; */
+             	display: inline-block;
+             }
+             a.public:hover{
+             	color: black;
+             	background-color: white;
+             }
+             .dl{
+             	position: absolute;
+             	left: 150px;
+             	bottom: 56px;
+             }
+             .sj{
+             	position: absolute;
+             	left: 200px;
+             	bottom: 47px;
+             }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="box">
+        	<div class="nav">
+        		<ul>
+        			<li><a href="#">运单查询</a></li>
+        			<li><a href="#" class="public">运费查询</a></li>
+        			<li><a href="#" class="public">时效查询</a></li>
+        			<li><a href="#" class="public">服务网点查询</a></li>
+        			<li><a href="#" class="public">收送范围查询</a></li>
+        			<li><a href="#" class="public">客户专区</a></li>
+        		</ul>
+        	</div>
+        	<div class="dl">
+        		<img src="../3.png" height="126" width="342">
+        	</div>
+        	<div class="sj">
+        		<img src="../4.png" height="9" width="13">
+        	</div>
+        </div>
+    </body>
+</html>
