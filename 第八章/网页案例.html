@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <style type="text/css">
              /* CSS初始化 */
-             body,div,h1,h2,h3,h4,h5,h6,ul,li,p{
+             body,div,h1,h2,h3,h4,h5,h6,ul,li,p,dl,dt,dd{
              	margin:0;
              	padding:0;
              }
@@ -19,7 +19,7 @@
              	border:0 none;  /* 去掉边框 */
              	outline-style: none; /* 去掉轮廓线 */
              }
-             ul{
+             ul,dl{
              	list-style: none;
              }
 
@@ -114,20 +114,196 @@
                	   line-height: 30px;
                }
 
+               .notice_box{
+               	   width: 980px;
+               	   margin: 0 auto;
+               }
                .notice p{
                    float: left;
                }
+
                .notice li{
-                   width: 16px;
+                   width: 23px;
                    height: 30px;
                	   float: right;
                }
-               .kongjian{
+               .xinlang,.renren,.weibo{
                	  width: 16px;
-               	  height: 16px;
+               	  height: 30px;
+
+               	  padding-top: 4px;
+               	  padding-right: 7px;
+
+               	  display: inline-block;
+               }
+               .tengxun{
+                  width: 16px;
+               	  height: 30px;
+
+               	  padding-top: 4px;
                	  display: inline-block;
                }
              /* 公告栏结束 */
+
+             /* 功能模块展示开始 */
+
+              .module{
+              	  width: 980px;
+              	  height: 224px;
+              	  margin: 0 auto;
+                  margin-top: 18px;
+                  margin-bottom: 53px;
+              }
+              .left,.middle,.right{
+              	  height: 224px;
+              	  border: 1px solid #e4e4e4;
+              	  padding-top: 13px;
+              }
+
+              .left{
+              	width: 310px;
+              	margin-right: 12px;
+              	float:left;
+              }
+              .middle{
+              	width: 373px;
+              	float: left;
+              }
+              .right{
+              	width: 268px;
+              	float: right;
+              }
+              .module .subtitle img,.module .subtitle h4{
+              	float: left;
+              }
+              .module .subtitle{
+              	margin-left: 6px;
+              }
+              .module .subtitle h4{
+              	margin-left: 9px;
+              	color: #7ab800;
+              	font-size: 14px;
+              }
+             
+              .product img.contentimg{
+              	 width: 95px;
+              	 height: 143px;
+              	 margin:0 auto; 
+              	 margin-top: 30px;
+              }
+               .product{
+               	position: relative;  /* 子绝父相 */
+               }
+              .product a{
+              	  width: 11px;
+              	  height: 19px;
+              	  display: inline-block;
+              	  position: absolute;/* 子绝父相 */
+              }
+              .product a.buttonleft{
+              	 top: 100px;
+              	 left: 33px;
+              }
+              .product a.buttonright{
+              	 top:100px;
+              	 right: 76px;
+              }
+
+              .middle .subtitle{
+              	float:left;
+              }
+              .middle a.more{
+              	color: #666666;
+              	display: inline-block;
+              	margin-right: 10px;
+              	float: right;
+              }
+
+              .middle ul{
+              	margin: 20px 15px;
+              }
+              .middle li{
+              	line-height: 28px;
+              	border-bottom: 1px dashed #dcdcdc;
+              }
+              .middle li a{
+              	color: #666666;
+              }
+              .middle li a.red{
+              	color: red;
+              }
+              .middle li a:hover{
+              	color: #98cb00;
+              }
+
+              
+              .right ul{
+              	margin: 25px 30px;
+              }
+
+              .right li{
+              	line-height: 22px;
+              }
+
+              .right a{
+              	margin-top: 0px;
+              	height: 15px;
+              	line-height: 15px;
+              	display: inline-block;
+              	border-left: 3px solid #98cb00;
+              	padding-left: 5px;
+              	color: black;
+              }
+              
+              .right .relation{
+              	margin-left: 30px;
+              	margin-right: 10px;
+              	margin-top: 35px;
+              }
+
+              .right p{
+              	margin-bottom: 10px;
+              }
+             /* 功能模块展示结束 */
+
+             /* 尾部开始 */
+             .footer{
+             	height: 308px;
+             	background-color: #2d2d2d;
+             	margin: 0 auto;
+             }
+
+             .footer .minfooter{
+             	width: 980px;
+             	height: 223px;
+             	margin: 0 auto;
+             }
+             .minfooter dl{
+             	float: left;
+             	margin-top: 16px;
+             	margin-right: 30px;
+             }
+
+             .minfooter dt{
+             	color: #c7c7c7;
+             }
+
+             .minfooter dd{
+             	margin-top:10px;
+             	color: #707070; 
+             }
+             .footer .bottom{
+             	border-top: 2px dashed #414141;
+             }
+             .footer .bottom p{
+                text-align: center;
+                padding-top: 5px;
+             	margin-bottom:10px; 
+             }
+
+
+
+             /* 尾部结束 */
         </style>
     </head>
     <body>
@@ -173,18 +349,142 @@
         	<div class="notice_box">
         		<p>最新公告：尚合Aone智能手机入网证已获取工信部门审批下发。尚合官网</p>
         		<ul>
+        		    <li>
+        			    <a class="tengxun" href="#">
+        				  <img src="images/renren.png">
+        			    </a>
+        			</li>
         			<li>
-        			   <a class="kongjian" href="#">
+        			     <a class="weibo" href="#">
+        				    <img src="images/weibo.png">
+        			     </a>
+        			</li>
+        			<li>
+        			    <a class="xinlang" href="#">
+        				   <img src="images/xinlang.png">
+        			    </a>
+        			 </li>
+        			<li>
+        			   <a class="renren" href="#">
         				  <img src="images/zone.png">
         			   </a>
         			</li>
-        			<li><a class="renren" href="#"></a></li>
-        			<li><a class="weibo" href="#"></a></li>
-        			<li><a class="tengxun" href="#"></a></li>
         		</ul>
         	</div>
         </div>
         
         <!-- 公告栏结束 -->
+  
+        <!-- 功能模块展示开始 -->
+
+        <div class="module">
+        	<div class="left">
+        		<div class="subtitle">
+        			<img src="images/o.jpg" height="14" width="14">
+        			<h4>新闻发布</h4>
+        		</div>
+        		<div class="product">
+        		    <a href="#" class="buttonleft">
+        		    	<img src="images/left.png">
+        		    </a>
+        			<img class="contentimg" src="images/home_hot_01.png">
+        			<a href="#" class="buttonright">
+        		    	<img src="images/right.png">
+        		    </a>
+        		</div>
+        	</div>
+        	<div class="middle">
+        		<div class="subtitle">
+        			<img src="images/o.jpg" height="14" width="14">
+        			<h4>新闻中心</h4>
+        		</div>
+        		<a class="more" href="#">更多</a>
+        		<ul>
+        			<li><a class="red" href="#">致歉公告</a></li>
+        			<li><a href="#">首批尚合Aonet已全部售馨!</a></li>
+        			<li><a href="#">【媒体报导】国产高性价比 尚合Aonet四核手机评测</a></li>
+        			<li><a href="#">我司产品已经通过了国家强制性产品3C认证</a></li>
+        			<li><a href="#">尚合Aone智能手机入网证已经获工信部门审批下发.</a></li>
+        			<li><a href="#">我司通过ISO9001:2008国际质量管理体系认证</a></li>
+        		</ul>
+        	</div>
+        	<div class="right">
+        		<div class="subtitle">
+        			<img src="images/o.jpg" height="14" width="14">
+        			<h4>技术与支持</h4>
+        		</div>
+        		<ul><!-- 这里可以使用div a进行布局 -->
+        			<li><a href="#">售后服务</a></li>
+        			<li><a href="#">投诉与建议</a></li>
+        			<li><a href="#">联保网点</a></li>
+        			<li><a href="#">常见问题FAQ</a></li>
+        		</ul>
+        		<div class="relation">
+        			<p>深圳市汇聚众合科技发展有限公司</p>
+        		    <p>服务热线：400-633-7922</p>
+        		</div>
+        	</div>
+        </div>
+
+        <!-- 功能模块展示结束 -->
+
+        <!-- 尾部开始 -->
+
+         <div class="footer">
+         	<div class="minfooter">
+         		<dl>
+    		        <dt>尚合首页</dt>
+    		        <dd>返回首页</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>智能手机</dt>
+    		        <dd>Aone-T</dd>
+    		        <dd>Aone</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>平板电脑</dt>
+    		        <dd>尚PAD S200</dd>
+    		        <dd>尚PAD S100</dd>
+    		        <dd>尚PAD SH-Q7</dd>
+    		        <dd>尚PAD SH-Q5</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>配件中心</dt>
+    		        <dd>Aone 智能手机</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>服务与支持</dt>
+    		        <dd>售后服务</dd>
+    		        <dd>投诉与建议</dd>
+    		        <dd>联保网点</dd>
+    		        <dd>常见问题FAQ</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>关于我们</dt>
+    		        <dd>公司介绍</dd>
+    		        <dd>企业文化</dd>
+    		        <dd>工作机会</dd>
+    		        <dd>联系我们</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>新闻中心</dt>
+    		        <dd>公司新闻</dd>
+    		        <dd>媒体报道</dd>
+    	        </dl>
+    	        <dl>
+    		        <dt>常用链接</dt>
+    		        <dd>百度</dd>
+    		        <dd>新浪微博</dd>
+    	        </dl>
+         	</div>
+         	<div class="bottom">
+         		<p>
+         		   深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先公司深圳市会居中和优先
+         		</p>
+	            <p>公司深圳市会居中和优先公司</p>
+         	</div>
+         </div>
+
+        <!-- 尾部结束 -->
     </body>
 </html>
