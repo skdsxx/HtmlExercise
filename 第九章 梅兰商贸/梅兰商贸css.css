@@ -2,7 +2,7 @@
 * @Author: SunXian
 * @Date:   2017-07-26 11:00:06
 * @Last Modified by:   SunXian
-* @Last Modified time: 2017-07-26 17:26:50
+* @Last Modified time: 2017-07-27 17:14:33
 */
 /* CSS初始化 */
 body,div,h1,h2,h3,h4,h5,h6,ul,li,p,dl,dt,dd,input{
@@ -159,14 +159,20 @@ ul,dl{
 }
 .ban_left ul{
 	padding-top: 12px;
-	padding-left: 7px;
 	background-color: #ebf0f6;
 }
 .ban_left li{
-    margin-left: 7px;
+    margin-left: 9px;
 	padding-bottom: 14px;
 	padding-left: 30px;
 } 
+.ban_left a{
+	color: #606060;
+}
+
+.ban_left a:hover{
+	color: #DDBE3E;
+}
 .ban_left .one{
 	background: url(images/icon_1.png) no-repeat top left;
 }
@@ -206,11 +212,14 @@ ul,dl{
 
 
 /* 建筑材料开始 */
-.building{
+.public_title{
 	margin-top: 14px;
 	height: 36px;
 	line-height: 36px;
 	padding-left: 22px;
+
+	font-size: 14px;
+	font-weight: 700;
 
     color: #444444;
 	background-color: #ecf1f7;
@@ -226,13 +235,16 @@ ul,dl{
 	width: 727px;
 	height: 344px;
 	border:1px solid #d8d8d8;
+
+	float:left;
 }
 
 .build_l_t{
 	margin-top: 15px;
 }
 .public_box{
-	margin-left: 26px;
+	width: 320px;
+	margin-left: 24px;
 	float:left;
 }
 .box_icon{
@@ -257,7 +269,10 @@ ul,dl{
 	height: 26px;
 	line-height: 26px;
 	text-align: center;
+    font-size: 16px;
+    font-weight: bold;
 
+    color: white;
 	background-color: #0a84e3;
 }
 
@@ -271,7 +286,7 @@ ul,dl{
 }
 .txt_two{
 	color: #863e01;
-	
+	font-size: 14px;
 }
 .txt_three{
 	margin-top: 22px;
@@ -287,5 +302,255 @@ ul,dl{
 .txt_three del{
 	color:#555555;
 }
-.txt_four{
+.build_l_m{
+	margin-top: 14px;
+	margin-bottom: 11px;
+	margin-left: 5px;
+	margin-right: 4px;
+	border-top: 1px solid #eeeeee;
+}
+
+/* 建筑材料主体右边 */
+
+.build_right{
+	width: 228px;
+	height: 344px;
+	border:1px solid #e0e6f0;
+	float: right;
+}
+.build_r_header{
+	height: 28px;
+	border-bottom: 1px solid #e0e6f0;
+	padding-left: 15px;
+
+	line-height: 28px;
+
+    color:#4e4e4e;
+	background-color: #fbfbfb;
+}
+.build_right ul{
+	margin-top:16px; 
+}
+.build_right li{
+    height: 13px;
+    margin-left: 10px;
+    padding-left: 15px;
+    margin-bottom: 12px;
+    line-height: 13px;
+
+    background: url(images/li_bg.png) no-repeat left center;
+}
+.build_right a{
+	color: #444444;
+}
+.build_right a:hover{
+	color: #DDBE3E;
+}
+
+/* 儿童安全座椅主体部分 */
+.child{
+	margin-top: 11px;
+}
+.child_left{
+    width: 722px;
+    float:left;
+}
+.child_subheader{
+	height: 23px;
+	line-height: 23px;
+	border-bottom:2px solid #00b0e7; 
+}
+.child_link{
+	height: 23px;
+	line-height: 23px;
+	color: #1a66b3;
+	font-weight: 700;
+	margin-right: 9px;
+
+	float: right;
+}
+.child_shower{
+	height: 301px;
+	border:1px solid #cacaca;
+	border-top: 0;
+}
+
+.product_public{
+	width: 164px;
+	margin-top: 5px;
+	margin-right: 11px;
+	margin-left: 5px;
+
+	float: left;
+}
+.product_img{
+	height: 170px;
+	margin-bottom: 9px;
+}
+.product_public p{
+	text-align: center;
+	margin-bottom: 11px;
+	color: #999999;
+}
+.product_public a{
+	color: black;
+}
+.product_public a:hover{
+	color: red;
+	text-decoration: underline;
+}
+
+.product_public span{
+	color: #a10000;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.child_right{
+	margin-right: 8px;
+	float:right;
+}
+.cr_top{
+	width: 218px;
+	height: 128px;
+	border:1px solid #cbcbcb;
+}
+.cr_bot{
+	width: 218px;
+	height: 177px;
+	margin-top: 10px;
+}
+
+.art_right{
+	width: 230px;
+	float: right;
+}
+.art_header{
+	margin-top: 7px;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+
+    font-size: 14px;
+    font-weight: 700;
+	color: #444444;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #e1e2e2;
+}
+.art_detail{
+	margin-top: 14px;
+	line-height: 20px;
+	color: #777777;
+}
+.art_detail img{
+	float: left;
+	margin-right: 6px;
+}
+.art_detail ul{
+	margin-top: 6px;
+}
+.art_detail li{
+	height: 22px;
+}
+.art_detail span{
+	color: #999999;
+}
+
+.art_detail a{
+	color: #444444;
+}
+
+
+/* 友情链接 */
+.link{
+	margin-top: 18px;
+	height: 102px;
+	border-top: 1px solid #dddddd;
+	border-bottom: 2px solid #0a7ec3;
+}
+.label{
+	width: 61px;
+	height: 72px;
+	margin-top: 30px;
+	padding-left: 6px;
+	color: #999999;
+
+	float: left;
+}
+.link ul{
+	margin-top: 25px;
+}
+.link li{
+	height: 26px;
+	line-height: 26px;
+	margin-right: 7px;
+
+	float: left;
+}
+.link a{
+	color:#666666;
+}
+.link a:hover{
+	color:red;
+	text-decoration: underline;
+}
+.footer{
+	height: 91px;
+}
+.footer a{
+	font-size: 13px;
+	color: #444444;
+	display: inline-block;
+}
+.footer a:hover{
+	text-decoration: underline;
+}
+
+.foo_t{
+	
+	margin-left: 146px;
+	  margin-top: 8px;
+}
+.foo_t li{
+    padding-left: 10px;
+    padding-right: 11px;
+    text-align: center;
+    height: 26px;
+    line-height: 26px;
+
+    background: url(images/footer_bg.png) no-repeat right;
+
+    float: left;
+}
+
+.foo_m{
+    margin-left: 127px;
+}
+.foo_m li{
+    padding-left: 11px;
+    padding-right: 5px;
+    height: 26px;
+    line-height: 26px;
+
+    background: url(images/footer_bg.png) no-repeat left;
+
+    float: left;
+}
+
+.foo_b{
+    margin-left: 292px;
+
+}
+.foo_b li{
+    padding-left: 11px;
+    padding-right: 7px;
+    height: 26px;
+    line-height: 26px;
+
+    background: url(images/footer_bg.png) no-repeat right;
+
+    float: left;
+}
+.footer li.spe{
+	background-image: none;
 }
