@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <script type="text/javascript">
+
+              // 将1到100之间的所有是3的倍数找出来，在控制台中输出
+              
+              // var a=1;
+              // while(a<=100){
+                  
+              //     if(a%3==0){
+              //     	console.log(a);
+              //     }
+              //     a++;
+              // }
+  
+             // 求1到100之间的数字和。在控制台中输出
+             
+             // var sum=0;
+             // var n=1;
+             // while(n<=100){
+             // 	sum+=n;
+             // 	n++;
+             // }
+             // console.log(sum);
+ 
+             // 首先接收用户输入用户名和密码，只要用户名不是admin或者密码不是888就一直提示要求重新输入,如果正确则提登录成功.
+
+            //  var s=true;
+            //  while(s) {
+            //  	var username=prompt("请输入用户名");
+            //  	var password=prompt("请输入密码");
+
+            //  	if(username=="admin"&&password=="888"){
+            //  		alert("登录成功")
+            //          s=false;
+            //     }
+            //     else{
+            //     	alert("请重新输入");
+            //     }  
+            // }
+            
+
+            // 请将1到50中所有的奇数找出来，并在控制台中输出
+            
+            // var n=1;
+            // while(n<=50){
+            // 	if(n%2==1){
+            // 		console.log(n);
+            // 	}
+            // 	n++;
+            // }
+            
+            // 随机产生一个数字  0到9之间，并且接收用户输入的一个数字，   用户有3次输入的机会，如果3次机会内猜对则提示赢得游戏，直接跳出游戏。如果3都没有猜对，输掉游戏，并结束游戏。
+            
+            var r=Math.floor(Math.random()*10);
+            var i=1;
+            var s=false;
+            while(i<=3){
+                 var s=parseInt(prompt("请输入猜测的数字"));
+                 if(s==r){
+                 	alert("您赢了");
+                 	s=true;
+                 	break;
+                 }
+                 i++;
+            }
+            if(i==3&&s==false){
+                alert("您输了，结束");
+            }
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

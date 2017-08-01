@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <script type="text/javascript">
+             
+             // 接收用户输入的成绩和姓名，每15分为一个档。以50分为起点， 判断当前学生成绩在哪个范围并只给出提示信息（优，良，差，）同时如果成绩正好为90分，还要在控制台中输出当前学生的姓名及提示信息（优，良，差）
+              
+             var name=prompt("请输入姓名");
+             var grade=Number(prompt("请输入成绩"));
+
+             if(grade>=50&&grade<65)
+             {
+             	 alert("差");
+             }else if(grade>=65 && grade<80){
+             	alert("良");
+             }else if(grade>=80)
+             {
+             	alert("优");
+             	if(grade==90)
+             	{
+             		console.log(name+"  优");
+             	}
+             }
+
+
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
