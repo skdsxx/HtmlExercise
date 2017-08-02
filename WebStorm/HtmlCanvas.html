@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <title>保存恢复绘图状态</title>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="500"/>
+<script>
+    var canvas=$("#myCanvas")
+    var context=canvas.get(0).getContext("2d")
+
+    context.fillStyle="rgb(255,0,0)"
+    context.save()
+
+    context.fillRect(0,0,100,100)
+</script>
+</body>
+</html>
