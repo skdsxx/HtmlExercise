@@ -103,4 +103,232 @@ s,i,em{font-style:normal;text-decoration:none;}
     background:url(../images/jd2015img.png) 0 0 no-repeat;
 }
 
+/*京东的topbanner部分*/
+.topbanner{
+    background-color: #8A25C6;
+}
+.tp{
+    position: relative;
+}
+.close-banner{
+    width: 19px;
+    height:19px;
+    position: absolute;
+    top:5px;
+    right:0;
+    background: url(../images/close.png) no-repeat;
+}
+.close-banner:hover{
+    background: url(../images/close.png) 0 -19px no-repeat;
+}
+
+/*京东的搜索部分*/
+.logo{
+    width:360px;
+    height: 75px;
+    padding-top: 25px;
+    background: url(../images/logo.png) left center no-repeat;
+
+    float: left;
+    position: relative;
+}
+.logo-title{
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    text-indent: -2000px;
+}
+.db11{
+    position: absolute;
+    width: 180px;
+    height: 80px;
+    top:3px;
+    right: 10px;
+}
+.search{
+    width: 538px;
+    height: 36px;
+    background-color: green;
+    margin-top: 25px;
+    float: left;
+}
+.search input{
+    width: 450px;
+    height: 32px;
+    /*margin-top: 2px;*/
+    /*margin-left: 2px;*/
+    border: 2px solid #B61D1D;
+    padding-left: 4px;
+    color: #666666;
+    font: 14px/32px "Microsoft YaHei";
+    float: left;
+}
+.search button{
+    width: 80px;
+    height: 36px;
+    background-color: #B61D1D;
+    font: 14px/32px "Microsoft YaHei";
+    color: white;
+
+    cursor: pointer;/*鼠标变成小手*/
+    float: left;
+}
+/*京东的购物车部分*/
+.car{
+    width: 96px;
+    height: 34px;
+    border:1px solid #dfdfdf;
+    padding-left: 43px;
+    line-height: 34px;
+    margin: 25px 65px 0 0;
+    float: right;
+    position: relative;
+}
+.icon1{
+    top:9px;
+    left: 15px;
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 19px;
+    background: url(../images/sprite.png) 0 -58px no-repeat;
+    overflow: hidden;
+}
+.icon2{
+    font:400 13px/13px "SimSun";
+    top:11px;
+    right: 11px;
+    position: absolute;
+    display: block;
+}
+.icon3{
+    position: absolute;
+    top:-4px;
+    left:102px;
+    width: 16px;
+    height: 14px;
+    background-color: #c81623;
+    font:12px/14px "SimSun";
+    text-align: center;
+    display: block;
+
+    border-radius: 7px 7px 7px 0;
+    color: white;
+}
+
+/*热词部分*/
+.hotwords{
+    width: 500px;
+    padding: 7px 0;
+    float: left;
+}
+.hotwords a{
+    margin-right: 6px;
+}
+/*nav部分开始*/
+.jd-nav{
+    width: 100%;
+    height: 44px;
+    border-bottom: 2px solid #b1191a;
+}
+.dropdown{
+    width: 210px;
+    height: 44px;
+    background-color: #b1191a;
+    float: left;
+}
+
+.navitems{
+    width: 680px;
+    height: 44px;
+    background-color:pink;
+    float: left;
+}
+.bike{
+    width: 140px;
+    height: 44px;
+    float: right;
+}
+
+/*底部开始*/
+.slogan{
+    height: 54px;
+    padding: 20px 0;
+    background: #f5f5f5;
+    position: relative;
+}
+.item{
+    width: 302px;
+    position: absolute;
+    top:20px;
+    left: 50%;
+
+}
+.slogan1{
+    margin-left: -608px;
+}
+.slogan2{
+    margin-left: -304px;
+}
+.slogan3{
+    margin-left: 2px;
+}
+.slogan4{
+    margin-left: 306px;
+}
+
+.shopping dl{
+    width: 198px;
+    float:left;
+    margin-top: 25px;
+}
+.shopping dt,.coverage .dt{
+    font-size:16px;
+    font-family: "Microsoft YaHei";
+    height: 28px;
+}
+.shopping dd{
+    height: 20px;
+}
+.coverage{
+    margin-top: 15px;
+    padding-top: 10px;
+    width: 210px;
+    height: 165px;
+    float: right;
+
+    background: url(../images/china.png) 0 -130px no-repeat;
+}
+.coverage .dt{
+    padding: 0;
+}
+.coverage .dd{
+    margin-top: 9px;
+}
+.coverage p{
+    line-height: 18px;
+}
+.looklook{
+    text-align: right;
+    margin-top: 5px;
+}
+
+.footer-2017{
+    text-align: center;
+    padding: 20px 0 30px 0;
+    margin-top: 30px;
+    border-top: 1px solid #e5e5e5;
+}
+.links{
+    height: 25px;
+}
+.footer-2017 a{
+    margin: 0 6px;
+}
+.copyright{
+    line-height: 18px;
+}
+.authority{
+    margin-top: 10px;
+}
 
