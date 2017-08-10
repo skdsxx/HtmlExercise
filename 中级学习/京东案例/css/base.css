@@ -248,7 +248,28 @@ s,i,em{font-style:normal;text-decoration:none;}
 .dropdown .dd{
     height: 465px;
     background-color: #c81623;
-    border: 1px solid #b1191a;
+    border-left: 1px solid #B61D1D;
+    margin-top:2px;
+}
+.dropdown .items{
+    height: 31px;
+    line-height: 31px;
+    padding-left: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Microsoft YaHei";
+    position: relative;
+}
+.dropdown .items i{
+    position: absolute;
+    top:0px;
+    right:15px;
+    display: block;
+    width:5px;
+    height: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "SimSun";
 }
 .navitems{
     width: 680px;
