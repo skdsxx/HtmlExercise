@@ -236,19 +236,55 @@ s,i,em{font-style:normal;text-decoration:none;}
     height: 44px;
     background-color: #b1191a;
     float: left;
-}
 
+    position: relative;
+    z-index: 10;
+    overflow: visible;
+}
+.dropdown .dt a{
+    color: white;
+    font:400 15px/44px "Microsoft YaHei";
+}
+.dropdown .dd{
+    height: 465px;
+    background-color: #c81623;
+    border: 1px solid #b1191a;
+}
 .navitems{
     width: 680px;
     height: 44px;
-    background-color:pink;
     float: left;
+}
+
+.navitems li{
+    float: left;
+
+}
+.navitems li a{
+    display: block;
+    color: #333;
+    padding: 0 20px;
+    font: 400 15px/44px "Microsoft YaHei";
+}
+.navitems li a:hover{
+    color: #B61D1D;
+}
+.new{
+    background: url(../images/new.jpg) right top no-repeat;
 }
 .bike{
     width: 140px;
     height: 44px;
     float: right;
 }
+
+.bike a{
+    width: 140px;
+    height: 44px;
+    display: inline-block;
+    background: url(../images/bike.jpg);
+}
+
 
 /*底部开始*/
 .slogan{
