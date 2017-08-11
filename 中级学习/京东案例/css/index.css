@@ -44,13 +44,19 @@
     background-color: #b61b1f;
 }
 
+/*.arrow{*/
+    /*visibility: collapse;*/
+/*}*/
+/*.arrow:hover{*/
+    /*visibility: visible;*/
+/*}*/
 .arrow-l,.arrow-r{
     position: absolute;
     width: 28px;
     height: 62px;
     top: 50%;
     margin-top: -31px;
-    background:rgba(0,0,0,.3);
+    background:rgba(0,0,0,.2);
 
     text-align: center;
     font:600 18px/62px "SimSun";
@@ -61,11 +67,138 @@
 }
 .arrow-r{
     right: 0;
-}
+}.arrow-r:hover,.arrow-l:hover{
+    background: rgba(0,0,0,.4);
+    color: #fff;
+ }
 .news{
     width: 248px;
     height: 451px;
     border: 1px solid #e4e4e4;
     margin-top: 12px;
     float: right;
+}
+.jd-news{
+    height: 200px;
+    border-bottom: 1px dashed #e4e4e4;
+}
+.jd-news .dt,.lifeservice .dt{
+    height: 43px;
+    line-height: 43px;
+    border-bottom: 1px dashed #e8e8e7;
+    padding: 0 15px 0 15px;
+}
+.jd-news .dt h3,.lifeservice .dt h3{
+    color: #666;
+    float: left;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: "Microsoft YaHei";
+}
+.jd-news .dt a{
+    display: block;
+    font:500 12px/43px "SimSun";
+    float: right;
+}
+
+.jd-news .dd{
+    padding: 8px 0 0 15px;
+}
+.jd-news .dd li{
+    height: 28px;
+    line-height: 28px;
+}
+
+.jd-news .dd li span{
+    font-weight: 700;
+}
+.lifeservice{
+    height: 250px;
+    overflow: hidden;
+}
+.lifeservice .dd ul{
+    width: 252px;
+
+}
+.lifeservice .dd li{
+    width: 61.5px;
+    height: 70px;
+    /*border: 1px solid #e4e4e4;*/
+    /*float: left;*/
+    /*margin-left: -1px;*/
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    float:left;
+    position: relative;
+}
+
+.lifeservice li{
+    text-align: center;
+}
+.lifeservice li i{
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    margin-top:12px;
+    margin-bottom: 5px;
+    display: block;
+}
+.icons-bac1 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right top;
+}
+.icons-bac2 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -25px;
+}
+.icons-bac3 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -50px;
+}
+.icons-bac4 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -75px;
+}
+.icons-bac5 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -100px;
+}
+.icons-bac6 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -125px;
+}
+.icons-bac7 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -150px;
+}
+.icons-bac8 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -175px;
+}
+.icons-bac9 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -200px;
+}
+.icons-bac10 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -225px;
+}
+.icons-bac11 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -250px;
+}
+.icons-bac12 i{
+    background: url(../images/icon_lifeserv.png) no-repeat right -275px;
+}
+.hotnew{
+    background: url(../images/song.png) no-repeat top right;
+}
+
+/*双11的活动*/
+.today{
+    position: relative;
+}
+.night{
+    margin: 10px 0 28px 0;
+    overflow: hidden;
+}
+.night-r{
+    width: 1000px;
+    height: 160px;
+
+}
+.night-r ul{
+    width: 1004px;
+}
+.night-r li{
+    margin-right: 1px;
 }
