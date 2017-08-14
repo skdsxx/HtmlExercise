@@ -21,6 +21,7 @@
 
     float: left;
     position: relative;
+    overflow: hidden;
 }
 .circle{
     position: absolute;
@@ -43,7 +44,18 @@
 .circle li.current{
     background-color: #b61b1f;
 }
-
+/*.circle #slider-btn1:hover{*/
+    /*background-color: #b61b1f;*/
+/*}*/
+/*.circle #slider-btn2:hover{*/
+    /*background-color: #b61b1f;*/
+/*}*/
+/*.circle #slider-btn3:hover{*/
+    /*background-color: #b61b1f;*/
+/*}*/
+/*.circle #slider-btn4:hover{*/
+    /*background-color: #b61b1f;*/
+/*}*/
 /*.arrow{*/
     /*visibility: collapse;*/
 /*}*/

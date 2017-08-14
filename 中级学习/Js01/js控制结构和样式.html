@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #demo{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">
+
+</div>
+<div class="test">
+
+</div>
+<script type="text/javascript">
+//    var obj=document.getElementById("demo");
+//    obj.style.width="200px";
+//    obj.style.height="200px";
+//    obj.style.backgroundColor="red";
+    var a=1;
+    function func(){
+        a=b=2;//b为隐式的全局变量
+    }
+    func();
+    alert(a);
+    alert(b);
+</script>
+</body>
+</html>

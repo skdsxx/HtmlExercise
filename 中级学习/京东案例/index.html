@@ -8,6 +8,12 @@
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
+   <div class="mask">
+
+   </div>
+   <div class="box">
+       <span>×</span>
+   </div>
    <!--京东的头部导航开始-->
    <div class="shortcut">
         <div class="w">
@@ -70,12 +76,19 @@
         </div>
    </div>
    <!--京东的topbanner部分-->
-   <div class="topbanner">
+   <div class="topbanner" id="jd-topbanner">
        <div class="w tp">
            <img src="images/topbanner.jpg" alt="促销图片">
-           <a href="#" class="close-banner"></a>
+           <a href="#" class="close-banner" id="jd-close"></a>
        </div>
    </div>
+   <script type="text/javascript">
+       var close=document.getElementById("jd-close");
+       var banner=document.getElementById("jd-topbanner");
+       close.onclick=function(){
+           banner.style.display="none";
+       }
+   </script>
    <!--京东的搜索部分-->
    <div class="w clearfix">
        <div class="logo">
@@ -233,20 +246,84 @@
    <div class="w main clearfix">
        <!--轮播图-->
        <div class="slider">
-           <a href="#"><img src="images/slider1.jpg" alt="轮播图1"></a>
+           <a href="#"><img id="slider-img" src="images/slider1.jpg" alt="轮播图1"></a>
            <ul class="circle">
-               <li class="current">1</li>
-               <li>2</li>
-               <li>3</li>
-               <li>4</li>
-               <li>5</li>
-               <li>6</li>
+               <li  id="slider-btn1">1</li>
+               <li id="slider-btn2" >2</li>
+               <li id="slider-btn3">3</li>
+               <li id="slider-btn4">4</li>
+               <li id="slider-btn5">5</li>
+               <li id="slider-btn6">6</li>
            </ul>
            <div class="arrow"><!--左右两个三角-->
                <a href="javascript:;" class="arrow-l"><</a>
                <a href="javascript:;" class="arrow-r">></a>
            </div>
        </div>
+       <script type="text/javascript">
+           var img=document.getElementById("slider-img");
+           var btn1=document.getElementById("slider-btn1");
+           var btn2=document.getElementById("slider-btn2");
+           var btn3=document.getElementById("slider-btn3");
+           var btn4=document.getElementById("slider-btn4");
+           var btn5=document.getElementById("slider-btn5");
+           var btn6=document.getElementById("slider-btn6");
+           btn1.onmouseover=function(){
+               img.src="images/slider1.jpg";
+               btn1.style.backgroundColor="#b61b1f";
+               btn2.style.backgroundColor="#3e3e3e";
+               btn3.style.backgroundColor="#3e3e3e";
+               btn4.style.backgroundColor="#3e3e3e";
+               btn5.style.backgroundColor="#3e3e3e";
+               btn6.style.backgroundColor="#3e3e3e";
+           }
+           btn2.onmouseover=function(){
+               img.src="images/slider2.jpg";
+               btn1.style.backgroundColor="#3e3e3e";
+               btn2.style.backgroundColor="#b61b1f";
+               btn3.style.backgroundColor="#3e3e3e";
+               btn4.style.backgroundColor="#3e3e3e";
+               btn5.style.backgroundColor="#3e3e3e";
+               btn6.style.backgroundColor="#3e3e3e";
+           }
+           btn3.onmouseover=function(){
+               img.src="images/slider3.jpg";
+               btn1.style.backgroundColor="#3e3e3e";
+               btn2.style.backgroundColor="#3e3e3e";
+               btn3.style.backgroundColor="#b61b1f";
+               btn4.style.backgroundColor="#3e3e3e";
+               btn5.style.backgroundColor="#3e3e3e";
+               btn6.style.backgroundColor="#3e3e3e";
+           }
+           btn4.onmouseover=function(){
+               img.src="images/slider4.jpg";
+               btn1.style.backgroundColor="#3e3e3e";
+               btn2.style.backgroundColor="#3e3e3e";
+               btn3.style.backgroundColor="#3e3e3e";
+               btn4.style.backgroundColor="#b61b1f";
+               btn5.style.backgroundColor="#3e3e3e";
+               btn6.style.backgroundColor="#3e3e3e";
+           }
+           btn5.onmouseover=function(){
+               img.src="images/slider5.jpg";
+
+               btn1.style.backgroundColor="#3e3e3e";
+               btn2.style.backgroundColor="#3e3e3e";
+               btn3.style.backgroundColor="#3e3e3e";
+               btn4.style.backgroundColor="#3e3e3e";
+               btn5.style.backgroundColor="#b61b1f";
+               btn6.style.backgroundColor="#3e3e3e";
+           }
+           btn6.onmouseover=function(){
+               img.src="images/slider6.jpg";
+               btn1.style.backgroundColor="#3e3e3e";
+               btn2.style.backgroundColor="#3e3e3e";
+               btn3.style.backgroundColor="#3e3e3e";
+               btn4.style.backgroundColor="#3e3e3e";
+               btn5.style.backgroundColor="#3e3e3e";
+               btn6.style.backgroundColor="#b61b1f";
+           }
+       </script>
        <div class="news">
            <div class="jd-news">
                <div class="dt">

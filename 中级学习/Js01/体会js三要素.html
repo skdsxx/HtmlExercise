@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+
+</div>
+<button id="btn">改变宽度</button>
+<button id="btnh">改变高度</button>
+<button id="btnc">改变颜色</button>
+<script type="text/javascript">
+    var elem=document.getElementById("box");
+    var btn=document.getElementById("btn");
+    btn.onclick=function (){
+        elem.style.width="400px";
+    }
+    var btnh=document.getElementById("btnh");
+    btnh.onclick=function(){
+        elem.style.height="400px";
+    }
+    var btnc=document.getElementById("btnc");
+    btnc.onclick=function(){
+        elem.style.backgroundColor="green";
+    }
+</script>
+</body>
+</html>
