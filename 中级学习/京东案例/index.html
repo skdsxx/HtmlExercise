@@ -6,13 +6,31 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="icon" href="favicon.ico">
+    <script type="text/javascript">
+        window.onload=function(){
+            var mask=document.getElementById("mask");
+            var box=document.getElementById("box");
+            var login=document.getElementById("login");
+            login.onclick=function(){
+                mask.style.display="block";
+                box.style.display="block";
+            }
+
+            var close_login=document.getElementById("close-login");
+            close_login.onclick=function(){
+                mask.style.display="none";
+                box.style.display="none";
+            }
+
+        }
+    </script>
 </head>
 <body>
-   <div class="mask">
+   <div id="mask">
 
    </div>
-   <div class="box">
-       <span>×</span>
+   <div id="box">
+       <span id="close-login">×</span>
    </div>
    <!--京东的头部导航开始-->
    <div class="shortcut">
@@ -26,7 +44,7 @@
             <div class="fr">
                 <ul>
                     <li>
-                        <a href="#">你好，请登录</a>&nbsp;&nbsp;
+                        <a href="#" id="login">你好，请登录</a>&nbsp;&nbsp;
                         <a class="col-red" href="#">免费注册</a>
                     </li>
                     <li class="line"></li>
