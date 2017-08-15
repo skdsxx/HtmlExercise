@@ -22,8 +22,13 @@
 <script type="text/javascript">
     var elem=document.getElementById("box");
     var btn=document.getElementById("btn");
+    console.log(elem.clientWidth*2);
+    console.log(typeof (elem.clientWidth*2));
+    console.log(String(elem.clientWidth*2)+"px");
+    console.log(typeof (String(elem.clientWidth*2)+"px"));
     btn.onclick=function (){
-        elem.style.width="400px";
+        elem.style.width=String(elem.clientWidth*2)+"px";
+        //elem.style.width="400px";
     }
     var btnh=document.getElementById("btnh");
     btnh.onclick=function(){
