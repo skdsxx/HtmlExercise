@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标展示</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .box{
+            width: 360px;
+            height: 431px;
+            border: 1px solid #ccc;
+            margin: 200px auto;
+            overflow: hidden;
+            position: relative;
+        }
+        /*img{*/
+            /*height: 360px;*/
+
+            /*border-bottom: 1px solid #ccc;*/
+        /*}*/
+        ul{
+            list-style: none;
+            width: 360px;
+            height: 70px;
+            border-top: 1px solid #ccc;
+            position: absolute;
+            bottom:0;
+            left:0;
+        }
+        li{
+            list-style: none;
+            width: 72px;
+            height: 70px;
+            float: left;
+        }
+        #img1{
+            background: url(images/01.jpg) no-repeat top center;
+        }
+        #img2{
+            background: url(images/02.jpg) no-repeat top center;
+        }
+        #img3{
+            background: url(images/03.jpg) no-repeat top center;
+        }
+        #img4{
+            background: url(images/04.jpg) no-repeat top center;
+        }
+        #img5{
+            background: url(images/05.jpg) no-repeat top center;
+        }
+    </style>
+    <script>
+        function fun(obj){
+            var target=document.getElementById("bg");
+            //target.src="images/"+obj+"big.jpg";
+            target.style.background="url(images/"+obj+"big.jpg) no-repeat top left";
+        }
+    </script>
+</head>
+<body>
+<div id="bg" class="box">
+    <!--<img id="bgImg" src="images/01big.jpg" alt="">-->
+    <ul>
+        <li id="img1" onmouseover="fun('01');"></li>
+        <li id="img2" onmouseover="fun('02');"></li>
+        <li id="img3" onmouseover="fun('03');"></li>
+        <li id="img4" onmouseover="fun('04');"></li>
+        <li id="img5" onmouseover="fun('05');"></li>
+    </ul>
+</div>
+</body>
+</html>
