@@ -154,43 +154,44 @@
     margin-top:12px;
     margin-bottom: 5px;
     display: block;
+    background: url(../images/icon_lifeserv.png) no-repeat;
 }
-.icons-bac1 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right top;
-}
-.icons-bac2 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -25px;
-}
-.icons-bac3 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -50px;
-}
-.icons-bac4 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -75px;
-}
-.icons-bac5 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -100px;
-}
-.icons-bac6 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -125px;
-}
-.icons-bac7 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -150px;
-}
-.icons-bac8 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -175px;
-}
-.icons-bac9 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -200px;
-}
-.icons-bac10 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -225px;
-}
-.icons-bac11 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -250px;
-}
-.icons-bac12 i{
-    background: url(../images/icon_lifeserv.png) no-repeat right -275px;
-}
+/*.icons-bac1 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right top;*/
+/*}*/
+/*.icons-bac2 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -25px;*/
+/*}*/
+/*.icons-bac3 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -50px;*/
+/*}*/
+/*.icons-bac4 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -75px;*/
+/*}*/
+/*.icons-bac5 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -100px;*/
+/*}*/
+/*.icons-bac6 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -125px;*/
+/*}*/
+/*.icons-bac7 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -150px;*/
+/*}*/
+/*.icons-bac8 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -175px;*/
+/*}*/
+/*.icons-bac9 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -200px;*/
+/*}*/
+/*.icons-bac10 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -225px;*/
+/*}*/
+/*.icons-bac11 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -250px;*/
+/*}*/
+/*.icons-bac12 i{*/
+    /*background: url(../images/icon_lifeserv.png) no-repeat right -275px;*/
+/*}*/
 .hotnew{
     background: url(../images/song.png) no-repeat top right;
 }

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>input 字符型</title>
+    <script>
+        window.onload= function () {
+            var txt=document.getElementById("txt");
+            var btn=document.getElementsByTagName("Button")[0];
+            btn.onclick= function () {
+                alert(typeof txt.value);
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="txt">
+<button>点击</button>
+</body>
+</html>

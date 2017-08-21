@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>隔行变色</title>
+    <style>
+        .box{
+            width: 460px;
+        }
+        li{
+            list-style: none;
+            line-height: 30px;
+        }
+        li span{
+            margin: 5px;
+            width: 60px;
+            height: 30px;
+            display: inline-block;
+            overflow: hidden;
+        }
+        .current{
+            background-color: #ccc !important;
+        }
+    </style>
+    <script>
+        window.onload= function () {
+            var liArr=document.getElementsByTagName("li");
+            for(var i= 0,len=liArr.length;i<len;i++)
+            {
+                if(i%2==0)
+                {
+                    liArr[i].style.backgroundColor="#eee";
+                }
+                else {
+                    liArr[i].style.backgroundColor="#ddd";
+                }
+                liArr[i].onmouseover= function () {
+                    this.className="current";
+                }
+                liArr[i].onmouseout=function(){
+                    this.className="";
+                }
+            }
+
+//            for(var i= 0,len=liArr.length;i<len;i+=2)
+//            {
+//                liArr[i].style.backgroundColor="#eee";
+//            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <ul>
+        <li>
+            <span>上数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>上证数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>证指数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>上证指数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>上证指数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+         </li>
+        <li>
+            <span>上证数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+         </li>
+        <li>
+            <span>上证指数高</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>上证指数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>上证数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+        <li>
+            <span>上数</span>
+            <span>3641</span>
+            <span>10-5</span>
+            <span>0.16%</span>
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>鼠标经过选择表单</title>
+    <script>
+        window.onload= function () {
+            var select=document.getElementById("select");
+            select.onmouseover= function () {
+                this.select();
+            }
+        }
+    </script>
+</head>
+<body>
+鼠标经过时选择表单内容：<input type="text" id="select" value="">
+</body>
+</html>

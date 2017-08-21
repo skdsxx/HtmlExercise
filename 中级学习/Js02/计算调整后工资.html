@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算调整后的工资</title>
+    <style type="text/css">
+        .box{
+            width: 500px;
+            margin: 200px auto;
+        }
+    </style>
+    <script>
+        window.onload= function () {
+            var beforwage=document.getElementById("wagebefor");
+            var year=document.getElementById("year");
+            var btn=document.getElementById("btn");
+            var afterwage=document.getElementById("wageafter");
+            btn.onclick= function () {
+                if(year.value>=5)
+                {
+                    afterwage.value=beforwage.value*(1+0.2).toString();
+                }
+                else if(year.value>=2)
+                {
+                    afterwage.value=beforwage.value*(1+0.15).toString();
+                }
+                else if(year.value<2)
+                {
+                    afterwage.value=beforwage.value*(1+0.1).toString();
+                }
+                else if(year.value<=0)
+                {
+                    alert("请输入正确的工龄")
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    工资：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="wagebefor"><br>
+    工龄：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="year"><br>
+    <button id="btn">计算</button><br>
+    调整工资：<input type="text" id="wageafter">
+</div>
+
+</body>
+</html>

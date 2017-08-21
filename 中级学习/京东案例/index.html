@@ -362,7 +362,7 @@
                <div class="dt">
                    <h3>生活服务</h3>
                </div>
-               <div class="dd">
+               <div class="dd" id="iconsprite">
                    <ul>
                        <li class="icons-bac1" >
                            <a href="#">
@@ -437,6 +437,15 @@
                            </a>
                        </li>
                    </ul>
+
+                   <script>
+                       var ilis=document.getElementById("iconsprite").getElementsByTagName("i");
+                       for(var i= 0,len=ilis.length;i<len;i++)
+                       {
+                           ilis[i].style.backgroundPosition="-25px "+i*(-25).toString()+"px ";
+                       }
+                   </script>
+
                </div>
            </div>
        </div>
