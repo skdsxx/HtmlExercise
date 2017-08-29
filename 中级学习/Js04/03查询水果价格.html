@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>查询水果价格</title>
+    <script>
+        window.onload= function () {
+            var txt=document.getElementById("txt");
+            var btn=document.getElementById("btn");
+            var dollor=0.0;
+            btn.onclick= function () {
+                switch (txt.value) {
+                    case "苹果":
+                        dollor = 5.5;
+                        break;
+                    case "梨":
+                        dollor = 3.5;
+                        break;
+                    case "西瓜":
+                        dollor = 1.5;
+                        break;
+                    case "葡萄":
+                        dollor = 7.0;
+                        break;
+                    default:
+                        dollor = -1;
+                        break;
+                }
+                alert(dollor);
+            }
+        }
+    </script>
+</head>
+<body>
+<input type="text" id="txt"> <button id="btn">查询</button>
+</body>
+</html>

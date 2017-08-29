@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>兄弟</title>
+    <script>
+        window.onload=function(){
+            var one=document.getElementById("one");
+            //one.nextSibling.style.backgroundColor="red";
+            var div=one.nextElementSibling||one.nextSibling;
+            //兼容性写法 ，先写正常浏览器，后写ie678
+            div.style.backgroundColor="red";
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li>123343</li>
+    <li>123343</li>
+    <li id="one">123343</li>
+    <li>123343</li>
+    <li>123343</li>
+    <li>123343</li>
+    <li>123343</li>
+    <li>123343</li>
+</ul>
+</body>
+</html>

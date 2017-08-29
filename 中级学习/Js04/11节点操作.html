@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>节点操作</title>
+</head>
+<body>
+<div id="demo">
+    <div id="one"></div>
+    <div id="xiongda"></div>
+</div>
+<script>
+    var demo=document.getElementById("demo");
+    var children=demo.children;
+    //创建节点
+    var firstDiv=document.createElement("div");
+    //插入节点
+    demo.appendChild(firstDiv);
+    var test=document.createElement("div");
+    //demo.insertBefore(test,children[0]);//如果第二个参数为null,则默认新生成的节点放在最后面
+    demo.insertBefore(test,null);
+
+    //移除节点
+    var da=document.getElementById("xiongda");
+    demo.removeChild(da);
+
+    //克隆节点
+    var last=children[0].cloneNode();
+    demo.appendChild(last);
+
+    demo.parentNode.appendChild(demo.cloneNode(true));
+</script>
+</body>
+</html>

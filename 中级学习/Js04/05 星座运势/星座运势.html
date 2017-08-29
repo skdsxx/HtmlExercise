@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星座运势</title>
+    <style>
+        .constellation{
+            width: 350px;
+            height: 250px;
+            border:1px solid #ccc;
+            margin: 100px auto;
+        }
+        .title{
+            padding-left: 10px;
+            line-height: 35px;
+            font-weight: 700;
+            color: #036;
+        }
+        .content{
+            padding: 10px;
+        }
+        #icon{
+            width: 50px;
+            height: 50px;
+            background: url(images/icon.png) 0 0 no-repeat;
+            margin-right: 10px;
+            float: left;
+        }
+        .clearfix:after{
+            content: "";
+            clear: both;
+            display: block;
+            width: 0;
+            height: 0;
+            visibility: hidden;
+        }
+        .clearfix{
+            zoom: 1;
+        }
+        .right{
+            float: left;
+        }
+        .yunshi{
+            width: 12px;
+            height: 12px;
+            display: inline-block;
+            background: url(images/star.png) no-repeat 0 0;
+        }
+        .star{
+            background-position: -12px 0;
+        }
+        #detail span{
+            color: cornflowerblue;
+        }
+    </style>
+    <script>
+        window.onload= function () {
+            var sele=document.getElementById("sele");
+            var icon=document.getElementById("icon");
+            var spans=document.getElementById("score").getElementsByTagName("span");
+            var detail=document.getElementById("detail");
+            function setIcon(left,right){
+                icon.style.backgroundPosition=left+"px "+right+"px";
+            }
+            function setClass(obj){
+                for(var i= 0;i<spans.length;i++)
+                {
+                    spans[i].className="yunshi";
+                }
+                for(var j=obj;j<spans.length;j++)
+                {
+                    spans[j].className="yunshi star";
+                }
+            }
+
+            setClass(4);
+            sele.onchange= function () {
+                switch (this.value){
+                    case "1":
+                        setIcon(0,0);
+                        setClass(4);
+                        detail.innerHTML="整体运势：今天有点懒散，工作热情一般般，总是不太愿意做事情。对待爱情也是随随便便，单身者寻找爱情是走马观...<span> 详细></span>";
+                        break;
+                    case "2":
+                        setIcon(-50,0);
+                        setClass(4);
+                        detail.innerHTML="整体运势：务必事事小心的一天，工作上稍不留神就会导致返工，出现状况。另外对爱情别太苛刻，一味的要求会导致... <span> 详细></span>";
+                        break;
+                    case "3":
+                        setIcon(-100,0);
+                        setClass(3);
+                        detail.innerHTML="整体运势：感情进展有些慢，想要升温还需要多努力了，太猴急反而会弄巧反拙，必须要做好心理建设。工作中与合作... <span> 详细></span>";
+                        break;
+                    case "4":
+                        setIcon(-150,0);
+                        setClass(4);
+                        detail.innerHTML="整体运势：今天思想特别活跃，充满干劲，难度越大的任务越能激发你的积极性。投资理财建议不建议太保守，大胆冒...  <span> 详细></span>";
+                        break;
+                    case "5":
+                        setIcon(-200,0);
+                        setClass(5);
+                        detail.innerHTML="整体运势：今天的你热情洋溢，幽默可爱，与人交际轻松自如，受到异性的热切关注，这也满足了你小小的虚荣心。与... <span> 详细></span>";
+                        break;
+                    case "6":
+                        setIcon(-250,0);
+                        setClass(4);
+                        detail.innerHTML="整体运势：工作表现是不错，能得到领导的表扬，可处事需要注意方法。情绪好坏会影响到其它方面，例如财运，在关... <span> 详细></span>";
+                        break;
+                    case "7":
+                        setIcon(0,-50);
+                        setClass(3);
+                        detail.innerHTML="整体运势：今天工作上可能会出现各种的问题，要费时费力去处理，其实就是需要更多的耐力。个人待人处事的态度与...  <span> 详细></span>";
+                        break;
+                    case "8":
+                        setIcon(-50,-50);
+                        setClass(4);
+                        detail.innerHTML="整体运势：神经十分敏感，一点小小的问题就能让你感到人生很难熬。另外今日团队合作效率会更好，最好跟合拍的小...  <span> 详细></span>";
+                        break;
+                    case "9":
+                        setIcon(-100,-50);
+                        setClass(3);
+                        detail.innerHTML="整体运势：时时刻刻都要打起精神来，对待每一件事都要认真细致一些，以防出错，尤其是销售行业的人。爱情有可能...  <span> 详细></span>";
+                        break;
+                    case "10":
+                        setIcon(-150,-50);
+                        setClass(4);
+                        detail.innerHTML="整体运势：今天一整天的状态看起来都很慵懒，不要愿意动身，幸好有贵人从旁协助，事事顺心。偶尔会跟另一半闹情...  <span> 详细></span>";
+                        break;
+                    case "11":
+                        setIcon(-200,-50);
+                        setClass(5);
+                        detail.innerHTML="整体运势：今天出门前给自己一个大大的笑容，加加油，迎接新的一天吧！与人相处亲切和谐，在追爱上不妨也积极一...  <span> 详细></span>>";
+                        break;
+                    case "12":
+                        setIcon(-250,-50);
+                        setClass(3);
+                        detail.innerHTML="整体运势：运势很不错的今天，你会发现身边的人都对你和颜悦色，待你和和气气，那么请你很大家好好相处吧！展示...  <span> 详细></span>";
+                        break;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="constellation">
+    <div class="title">星座运势</div>
+    <div class="content">
+        <div class="con_t clearfix">
+            <div id="icon"></div>
+            <div class="right">
+                <select name="" id="sele">
+                    <option value="1">白羊座（3.21-4.19）</option>
+                    <option value="2">金牛座（4.20-5.20）</option>
+                    <option value="3">双子座（5.21-6.21）</option>
+                    <option value="4">巨蟹座（6.22-7.22）</option>
+                    <option value="5">狮子座（7.23-8.22）</option>
+                    <option value="6">处女座（8.23-9.22）</option>
+                    <option value="7">天秤座（9.23-10.23）</option>
+                    <option value="8">天蝎座（10.24-11.22）</option>
+                    <option value="9">射手座（11.23-12.21）</option>
+                    <option value="10">摩羯座（12.22-1.19）</option>
+                    <option value="11">水瓶座（1.20-2.18）</option>
+                    <option value="12">双鱼座（2.19-3.20）</option>
+                </select>
+                <div id="score">
+                    今日运势：
+                    <span class="yunshi"></span>
+                    <span class="yunshi"></span>
+                    <span class="yunshi"></span>
+                    <span class="yunshi"></span>
+                    <span class="yunshi"></span>
+                </div>
+            </div>
+        </div>
+        <div class="con_b" id="detail">
+            整体运势：今天有点懒散，工作热情一般般，总是不太愿意做事情。对待爱情也是随随便便，单身者寻找爱情是走马观... <span>详细></span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
